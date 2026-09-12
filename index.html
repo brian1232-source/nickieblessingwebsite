@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nickie Blessing | Creative Portfolio</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+      <div class="nav-inner">
+        <!-- Logo with Profile Photo -->
+        <a href="#" class="logo">
+          <img src="logo.jpg" alt="Nickie Blessing" class="logo-img">
+          <span class="logo-text">Nickie <span class="highlight">Blessing</span></span>
+        </a>
+
+        <!-- Navigation Links (centered) -->
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#">Showreel</a></li>
+          <li><a href="hire-me.html">Contact</a></li>
+        </ul>
+
+        <!-- Right Side: CTA Button + Settings Icon -->
+        <div class="nav-right">
+          <a href="hire-me.html" class="nav-cta">Hire Me</a>
+          <button class="nav-settings" aria-label="Settings">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+        </div>
+
+        <!-- Pure CSS Hamburger Toggle (mobile) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+        <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+      </div>
+
+      <!-- Backdrop Overlay to Close Side Menu on Tap Outside -->
+      <label for="menu-toggle" class="menu-overlay" aria-hidden="true"></label>
+
+      <!-- Side Navigation Menu / Drawer -->
+      <div class="nav-menu">
+        <div class="drawer-header">
+          <div class="drawer-profile">
+            <img src="logo.jpg" alt="Nickie Blessing" class="drawer-avatar">
+            <div class="drawer-meta">
+              <span class="drawer-name">Nickie Blessing</span>
+              <span class="drawer-tag">Film Director &bull; Cinematographer &bull; Editor</span>
+            </div>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#">Showreel</a></li>
+          <li><a href="hire-me.html">Contact</a></li>
+        </ul>
+        <div class="drawer-footer">
+          <a href="hire-me.html" class="btn">Hire Me</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <!-- Left: Photo -->
+      <div class="hero-image">
+        <img src="images/bb.jpeg" alt="Nickie Blessing operating camera">
+      </div>
+
+      <!-- Right: Text -->
+      <div class="hero-text">
+        <h2>Hello, I'm</h2>
+        <h1 class="name">Nickie <span class="highlight">Blessing</span></h1>
+        <!-- Animated Roles (No Card Container) -->
+        <div class="roles-animated-box">
+          <span class="roles-prefix">I am a </span>
+          <span class="typed-role" id="typed-role">Film Director</span><span class="typing-cursor"></span>
+        </div>
+
+        <div class="roles-badges">
+          <span class="role-pill">Film Director</span>
+          <span class="role-pill">Video Editor</span>
+          <span class="role-pill">Camera Operator</span>
+          <span class="role-pill">Cinematographer</span>
+          <span class="role-pill">Voice Artist</span>
+          <span class="role-pill">Script Writer</span>
+          <span class="role-pill">Actor</span>
+          <span class="role-pill role-pill-gold">Creative Storyteller</span>
+        </div>
+
+        <p class="tagline">Transforming bold ideas into unforgettable cinematic stories.</p>
+        <div class="hero-actions">
+          <a href="#about" class="btn-primary">View My Work</a>
+          <a href="hire-me.html" class="btn-secondary">Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-container">
+
+      <!-- Journey Timeline -->
+      <div class="journey">
+        <div class="journey-header">
+          <h2 class="section-label">MY JOURNEY</h2>
+          <h3 class="section-title">THE STORY SO FAR</h3>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-line"></div>
+
+          <!-- Phase 1: The Beginning -->
+          <article class="timeline-item timeline-item--left">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <h4 class="timeline-phase">THE BEGINNING</h4>
+              <p class="timeline-desc">Where the passion for creativity and storytelling started.</p>
+            </div>
+          </article>
+
+          <!-- Phase 2: Finding My Voice -->
+          <article class="timeline-item timeline-item--right">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <h4 class="timeline-phase">FINDING MY VOICE</h4>
+              <p class="timeline-desc">Exploring filmmaking, cameras, editing and visual storytelling.</p>
+            </div>
+          </article>
+
+          <!-- Phase 3: Creating Stories -->
+          <article class="timeline-item timeline-item--left">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <h4 class="timeline-phase">CREATING STORIES</h4>
+              <p class="timeline-desc">Working on projects, collaborating and developing creative skills.</p>
+            </div>
+          </article>
+
+          <!-- Phase 4: The Future -->
+          <article class="timeline-item timeline-item--right">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <h4 class="timeline-phase">THE FUTURE</h4>
+              <p class="timeline-desc">Continuing to create meaningful, cinematic and unforgettable stories.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+ <!-- About Me / Pillars / Stats -->
+     
+      <div class="about-content">
+        <div class="about-header">
+          <h2 class="about-headline">More Than a Filmmaker.<br><span class="about-gold">I am a Storyteller.</span></h2>
+          <p class="about-paragraph">I believe powerful stories have the ability to connect, inspire and leave a lasting impression.</p>
+        </div>
+
+        <div class="pillars">
+          <article class="pillar">
+            <span class="pillar-number">01</span>
+            <span class="pillar-icon"><i class="fa-solid fa-camera"></i></span>
+            <h3 class="pillar-title">FILMMAKING</h3>
+            <p class="pillar-desc">From vision to final production.</p>
+          </article>
+          <article class="pillar">
+            <span class="pillar-number">02</span>
+            <span class="pillar-icon"><i class="fa-solid fa-pen"></i></span>
+            <h3 class="pillar-title">STORYTELLING</h3>
+            <p class="pillar-desc">Creating stories that connect.</p>
+          </article>
+          <article class="pillar">
+            <span class="pillar-number">03</span>
+            <span class="pillar-icon"><i class="fa-solid fa-lightbulb"></i></span>
+            <h3 class="pillar-title">CREATIVITY</h3>
+            <p class="pillar-desc">Bringing ideas to life.</p>
+          </article>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-number" data-target="10">0</span>
+            <span class="stat-label">PROJECTS</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="5">0</span>
+            <span class="stat-label">EXPERIENCE</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="20">0</span>
+            <span class="stat-label">HAPPY CLIENTS</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2 class="section-label">GET IN TOUCH</h2>
+        <h3 class="section-title">LET'S CREATE <span class="title-part2">SOMETHING</span> GREAT</h3>
+        <p class="contact-lead">
+          Have a project in mind? I'd love to hear about it.
+          Reach out and let's bring your story to life.
+        </p>
+        <div class="contact-details">
+          <a href="tel:+254112432586" class="contact-detail">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <span class="contact-detail-label">Phone</span>
+              <span class="contact-detail-value">+254 112 432586</span>
+            </div>
+          </a>
+          <a href="https://wa.me/254112432586" class="contact-detail" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div>
+              <span class="contact-detail-label">WhatsApp</span>
+              <span class="contact-detail-value">+254 112 432586</span>
+            </div>
+          </a>
+          <a href="mailto:hello@nickieblessing.com" class="contact-detail">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <span class="contact-detail-label">Email</span>
+              <span class="contact-detail-value">hello@nickieblessing.com</span>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/@NickieBlessing" class="contact-detail" target="_blank" rel="noopener">
+            <i class="fa-brands fa-youtube"></i>
+            <div>
+              <span class="contact-detail-label">YouTube</span>
+              <span class="contact-detail-value">@NickieBlessing</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-card">
+        <h3 class="contact-form-title">Send a Message</h3>
+        <form class="contact-form" onsubmit="return false;">
+          <div class="form-group">
+            <label for="cname">Your Name</label>
+            <input type="text" id="cname" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="cemail">Email Address</label>
+            <input type="email" id="cemail" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="cmessage">Your Message</label>
+            <textarea id="cmessage" rows="5" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Animated Stat Counters -->
+  <script>
+    function animateCounters() {
+      const counters = document.querySelectorAll(".stat-number[data-target]");
+      counters.forEach((counter) => {
+        const target = parseInt(counter.getAttribute("data-target"), 10);
+        const duration = 1800;
+        const start = performance.now();
+
+        function tick(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          counter.textContent = Math.round(target * eased);
+          if (progress < 1) {
+            requestAnimationFrame(tick);
+          } else {
+            counter.textContent = target + "+";
+          }
+        }
+        requestAnimationFrame(tick);
+      });
+    }
+
+    const statsSection = document.querySelector(".about");
+    if (statsSection) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animateCounters();
+              observer.disconnect();
+            }
+          });
+        },
+        { threshold: 0.15, rootMargin: "0px 0px -8% 0px" }
+      );
+      observer.observe(statsSection);
+    }
+  </script>
+
+  <!-- Interactive Typewriter Script -->
+  <script>
+    const roles = [
+      "Film Director",
+      "Video Editor",
+      "Camera Operator / Cinematographer",
+      "Voice Artist",
+      "Script Writer",
+      "Actor",
+      "Creative Storyteller"
+    ];
+
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typedElement = document.getElementById("typed-role");
+
+    function typeRole() {
+      if (!typedElement) return;
+      const currentRole = roles[roleIndex];
+      
+      if (isDeleting) {
+        typedElement.textContent = currentRole.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typedElement.textContent = currentRole.substring(0, charIndex + 1);
+        charIndex++;
+      }
+      
+      let speed = isDeleting ? 35 : 75;
+      
+      if (!isDeleting && charIndex === currentRole.length) {
+        speed = 1800;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        speed = 350;
+      }
+      
+      setTimeout(typeRole, speed);
+    }
+
+    document.addEventListener("DOMContentLoaded", typeRole);
+  </script>
+</body>
+</html>

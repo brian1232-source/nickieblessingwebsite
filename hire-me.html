@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire Me | Nickie Blessing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-inner">
+        <!-- Logo with Profile Photo -->
+        <a href="index.html" class="logo">
+          <img src="logo.jpg" alt="Nickie Blessing" class="logo-img">
+          <span class="logo-text">Nickie <span class="highlight">Blessing</span></span>
+        </a>
+
+        <!-- Navigation Links (centered) -->
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#portfolio">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <!-- Right Side: CTA Button + Settings Icon -->
+        <div class="nav-right">
+          <a href="hire-me.html" class="nav-cta">Hire Me</a>
+          <button class="nav-settings" aria-label="Settings">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+        </div>
+
+        <!-- Pure CSS Hamburger Toggle (mobile) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+        <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+      </div>
+
+      <!-- Backdrop Overlay to Close Side Menu on Tap Outside -->
+      <label for="menu-toggle" class="menu-overlay" aria-hidden="true"></label>
+
+      <!-- Side Navigation Menu / Drawer -->
+      <div class="nav-menu">
+        <div class="drawer-header">
+          <div class="drawer-profile">
+            <img src="logo.jpg" alt="Nickie Blessing" class="drawer-avatar">
+            <div class="drawer-meta">
+              <span class="drawer-name">Nickie Blessing</span>
+              <span class="drawer-tag">Film Director &bull; Cinematographer &bull; Editor</span>
+            </div>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#portfolio">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="drawer-footer">
+          <a href="hire-me.html" class="btn">Hire Me</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hire-hero">
+    <div class="hire-container">
+      <div class="hire-text">
+        <p class="section-kicker">LET'S WORK TOGETHER</p>
+        <h1>Bring Your<br><span>Story to Life.</span></h1>
+        <p class="hire-lead">
+          Whether you need a film director, cinematographer, editor or script writer,
+          I'd love to hear about your project. Let's create something unforgettable.
+        </p>
+      </div>
+
+      <div class="hire-form-card">
+        <h2 class="hire-form-title">Send a Message</h2>
+        <form class="hire-form" onsubmit="return false;">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service">
+              <option>Film Directing</option>
+              <option>Cinematography</option>
+              <option>Video Editing</option>
+              <option>Script Writing</option>
+              <option>Camera Operation</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="hire-footer">
+    <div class="hire-socials">
+      <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@NickieBlessing" class="social-link" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <p class="hire-footer-text">&copy; 2026 Nickie Blessing. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const roles = ["Film Director","Video Editor","Camera Operator / Cinematographer","Voice Artist","Script Writer","Actor","Creative Storyteller"];
+    let roleIndex = 0, charIndex = 0, isDeleting = false;
+    const typedElement = document.getElementById("typed-role");
+    function typeRole() {
+      if (!typedElement) return;
+      const currentRole = roles[roleIndex];
+      if (isDeleting) { typedElement.textContent = currentRole.substring(0, charIndex - 1); charIndex--; }
+      else { typedElement.textContent = currentRole.substring(0, charIndex + 1); charIndex++; }
+      let speed = isDeleting ? 35 : 75;
+      if (!isDeleting && charIndex === currentRole.length) { speed = 1800; isDeleting = true; }
+      else if (isDeleting && charIndex === 0) { isDeleting = false; roleIndex = (roleIndex + 1) % roles.length; speed = 350; }
+      setTimeout(typeRole, speed);
+    }
+    document.addEventListener("DOMContentLoaded", typeRole);
+  </script>
+</body>
+</html>
