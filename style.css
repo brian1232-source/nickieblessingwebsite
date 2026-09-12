@@ -1008,7 +1008,11 @@ input:focus-visible + label {
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(1.5rem, 3vw, 2.5rem);
   padding: clamp(2rem, 4vw, 3rem);
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--secondary-blue) 100%
+  );
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(3, 70, 148, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -1473,11 +1477,7 @@ input:focus-visible + label {
   align-items: center;
   justify-content: center;
   border-radius: 14px;
-  background: linear-gradient(
-    135deg,
-    var(--gold-accent),
-    var(--gold-hover)
-  );
+  background: linear-gradient(135deg, var(--gold-accent), var(--gold-hover));
   color: var(--primary-blue);
   font-size: 1.2rem;
   flex-shrink: 0;
@@ -2128,11 +2128,12 @@ input:focus-visible + label {
   }
 
   .hero {
-    padding: 1.75rem 0.75rem 3rem 0.75rem;
+    padding: 6.5rem 0.75rem 3rem;
   }
 
   .hero-image {
     max-width: 220px;
+    width: min(100%, 220px);
   }
 
   .hero-image img {
