@@ -525,7 +525,7 @@ input:focus-visible + label {
 
 .role-pill {
   font-size: 0.88rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #334155;
   background: rgba(255, 255, 255, 0.75);
   border: 1px solid rgba(3, 70, 148, 0.16);
@@ -907,7 +907,9 @@ input:focus-visible + label {
   border: 3px solid #ffffff;
   border-radius: 50%;
   background: var(--gold-accent);
-  box-shadow: 0 0 0 5px #ffffff, 0 0 0 7px rgba(3, 70, 148, 0.18);
+  box-shadow:
+    0 0 0 5px #ffffff,
+    0 0 0 7px rgba(3, 70, 148, 0.18);
 }
 
 .timeline-item--left .timeline-marker {
@@ -1302,11 +1304,7 @@ input:focus-visible + label {
    ========================================================== */
 .services {
   padding: clamp(5rem, 10vw, 8rem) clamp(1.25rem, 5vw, 4rem);
-  background:
-    radial-gradient(circle at 8% 10%, rgba(255, 204, 112, 0.24), transparent 28rem),
-    radial-gradient(circle at 94% 85%, rgba(26, 117, 255, 0.14), transparent 31rem),
-    linear-gradient(160deg, #f8fafc 0%, #ffffff 50%, #f1f5ff 100%);
-  border-top: 1px solid var(--border-light);
+  background: linear-gradient(180deg, #f8fafc 0%, #edf2f9 100%);
 }
 
 .services-container {
@@ -1337,19 +1335,19 @@ input:focus-visible + label {
 .services-header .section-title {
   font-family: var(--font-family);
   font-size: clamp(2.2rem, 4.5vw, 4rem);
-  font-weight: 900;
+  font-weight: 800;
   color: var(--text-dark);
-  line-height: 1.1;
-  letter-spacing: -2px;
-  margin-bottom: 1.5rem;
+  line-height: 1.12;
+  letter-spacing: -1.8px;
+  margin-bottom: 1.2rem;
 }
 
 .services-header .section-title span {
   color: var(--primary-blue);
-  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -1.6px;
 }
 
 .services-header p {
@@ -1389,7 +1387,12 @@ input:focus-visible + label {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue), var(--gold-accent));
+  background: linear-gradient(
+    90deg,
+    var(--primary-blue),
+    var(--secondary-blue),
+    var(--gold-accent)
+  );
   transform: scaleX(0);
   transform-origin: left;
   transition: transform var(--transition-speed) ease;
@@ -1413,7 +1416,11 @@ input:focus-visible + label {
   align-items: center;
   justify-content: center;
   border-radius: 18px;
-  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue),
+    var(--secondary-blue)
+  );
   color: #ffffff;
   box-shadow: 0 8px 20px rgba(3, 70, 148, 0.3);
   transition: all var(--transition-speed) ease;
@@ -1466,7 +1473,11 @@ input:focus-visible + label {
 .portfolio {
   padding: clamp(5rem, 10vw, 8rem) clamp(1.25rem, 5vw, 4rem);
   background:
-    radial-gradient(circle at 90% 5%, rgba(255, 204, 112, 0.3), transparent 25rem),
+    radial-gradient(
+      circle at 90% 5%,
+      rgba(255, 204, 112, 0.3),
+      transparent 25rem
+    ),
     linear-gradient(180deg, #f3f8ff 0%, #ffffff 52%, #f8fafc 100%);
   border-top: 1px solid var(--border-light);
 }
@@ -1526,7 +1537,9 @@ input:focus-visible + label {
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.82);
   box-shadow: 0 8px 26px rgba(3, 70, 148, 0.07);
-  transition: transform var(--transition-speed) var(--transition-bounce), box-shadow var(--transition-speed) ease;
+  transition:
+    transform var(--transition-speed) var(--transition-bounce),
+    box-shadow var(--transition-speed) ease;
 }
 
 .portfolio-item:hover {
