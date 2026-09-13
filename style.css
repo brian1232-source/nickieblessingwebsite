@@ -2000,6 +2000,14 @@ input:focus-visible + label {
   white-space: nowrap;
 }
 
+.form-status {
+  margin-top: 0.75rem;
+  color: var(--primary-blue);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+}
+
 /* ==========================================================
    RESPONSIVE MEDIA QUERIES
    ========================================================== */
