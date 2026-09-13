@@ -363,21 +363,21 @@
             <i class="fa-solid fa-phone"></i>
             <div>
               <span class="contact-detail-label">Phone</span>
-              <span class="contact-detail-value">+254 112 432586</span>
+              <span class="contact-detail-value">0112 432586</span>
             </div>
           </a>
-          <a href="https://wa.me/254112432586" class="contact-detail" target="_blank" rel="noopener">
+          <a href="https://wa.me/254750271316" class="contact-detail" target="_blank" rel="noopener">
             <i class="fa-brands fa-whatsapp"></i>
             <div>
               <span class="contact-detail-label">WhatsApp</span>
-              <span class="contact-detail-value">+254 112 432586</span>
+              <span class="contact-detail-value">0750 271316</span>
             </div>
           </a>
-          <a href="mailto:hello@nickieblessing.com" class="contact-detail">
+          <a href="mailto:nickieblessing9@gmail.com" class="contact-detail">
             <i class="fa-solid fa-envelope"></i>
             <div>
               <span class="contact-detail-label">Email</span>
-              <span class="contact-detail-value">hello@nickieblessing.com</span>
+              <span class="contact-detail-value">nickieblessing9@gmail.com</span>
             </div>
           </a>
           <a href="https://www.youtube.com/@NickieBlessing" class="contact-detail" target="_blank" rel="noopener">
@@ -392,18 +392,22 @@
 
       <div class="contact-form-card">
         <h3 class="contact-form-title">Send a Message</h3>
-        <form class="contact-form" onsubmit="return false;">
+        <form class="contact-form" action="/api/contact" method="post">
           <div class="form-group">
             <label for="cname">Your Name</label>
-            <input type="text" id="cname" placeholder="John Doe" required>
+            <input type="text" id="cname" name="name" placeholder="John Doe" autocomplete="name" maxlength="100" required>
           </div>
           <div class="form-group">
             <label for="cemail">Email Address</label>
-            <input type="email" id="cemail" placeholder="john@example.com" required>
+            <input type="email" id="cemail" name="email" placeholder="john@example.com" autocomplete="email" maxlength="254" required>
           </div>
           <div class="form-group">
             <label for="cmessage">Your Message</label>
-            <textarea id="cmessage" rows="5" placeholder="Tell me about your project..."></textarea>
+            <textarea id="cmessage" name="message" rows="5" placeholder="Tell me about your project..." maxlength="3000" required></textarea>
+          </div>
+          <div class="form-trap" aria-hidden="true">
+            <label for="cwebsite">Website</label>
+            <input type="text" id="cwebsite" name="website" tabindex="-1" autocomplete="off">
           </div>
           <button type="submit" class="btn btn-primary btn-full">Send Message</button>
         </form>
