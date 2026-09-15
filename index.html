@@ -79,7 +79,16 @@
     <div class="hero-container">
       <!-- Left: Photo -->
       <div class="hero-image">
-        <img src="images/bb.jpeg" alt="Nickie Blessing operating camera">
+        <div class="hero-slides" aria-live="polite">
+          <img class="hero-slide is-active" src="images/h1.jpeg" alt="Nickie Blessing behind the camera">
+          <img class="hero-slide" src="images/h2.jpeg" alt="Nickie Blessing on a film set">
+          <img class="hero-slide" src="images/bb.jpeg" alt="Nickie Blessing operating a camera">
+        </div>
+        <div class="hero-dots" aria-label="Choose hero image">
+          <button class="hero-dot is-active" type="button" aria-label="Show hero image 1" aria-current="true"></button>
+          <button class="hero-dot" type="button" aria-label="Show hero image 2"></button>
+          <button class="hero-dot" type="button" aria-label="Show hero image 3"></button>
+        </div>
       </div>
 
       <!-- Right: Text -->
@@ -255,6 +264,18 @@
             <p class="portfolio-desc">A screen performance showcasing natural presence, emotional range and confident on-camera storytelling.</p>
           </div>
         </article>
+
+        <article class="portfolio-item">
+          <div class="portfolio-image">
+            <video src="images/p2.mp4" muted controls preload="metadata" aria-label="Nickie Blessing operating a camera during an NTV Crossover production"></video>
+            <div class="portfolio-overlay"><span class="portfolio-tag">Behind the Camera</span></div>
+            <span class="portfolio-service-icon" aria-hidden="true"><i class="fa-solid fa-video"></i></span>
+          </div>
+          <div class="portfolio-info">
+            <h4 class="portfolio-name">NTV Crossover Production</h4>
+            <p class="portfolio-desc">Behind-the-scenes camera work capturing the energy, precision and storytelling of a live NTV production.</p>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -307,7 +328,7 @@
           <input type="hidden" name="_next" value="https://nickieblessingwebsite.vercel.app/?submitted=1#contact">
           <div class="form-group">
             <label for="cname">Your Name</label>
-            <input type="text" id="cname" name="name" placeholder="John Doe" autocomplete="name" maxlength="100" required>
+            <input type="text" id="cname" name="name" placeholder="Nickie Blessing" autocomplete="name" maxlength="100" required>
           </div>
           <div class="form-group">
             <label for="cemail">Email Address</label>
@@ -326,6 +347,17 @@
       </div>
     </div>
   </section>
+
+  <footer class="hire-footer">
+    <div class="hire-socials">
+      <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com/@nickieblessing1" class="social-link" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.youtube.com/@NickieBlessing" class="social-link" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <p class="hire-footer-text">&copy; 2026 Nickie Blessing. All rights reserved.</p>
+    <p class="hire-footer-text">Developed by <strong>Bn Tech Solution</strong> &middot; Credited by <strong>Danhum Production</strong></p>
+  </footer>
 
 </body>
 </html>
